@@ -40,6 +40,18 @@
       font-weight: 300;
       overflow-x: hidden;
     }
+    /* ── Background pattern ─────────────────────────────────────────── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url('/assets/images/chinoiserie.jpg');
+      background-repeat: repeat;
+      background-size: 400px;
+      opacity: 0.08;
+      z-index: 0;
+      pointer-events: none;
+    }
 
     /* ── Page Layout ────────────────────────────────────────────────── */
     .page {
@@ -305,7 +317,7 @@
   <!-- Hero -->
   <section class="hero page">
 
-    <p class="eyebrow">We're getting married</p>
+    <p class="eyebrow">You're invited to the wedding of</p>
 
     <h1 class="names">
       Isabella
@@ -351,15 +363,15 @@
   <section class="details-strip" id="details">
     <div class="details-item">
       <h3>Ceremony</h3>
-      <p>5:00 pm · Terravita Country Club</p>
+      <p>6:00 pm · The First Tee</p>
     </div>
     <div class="details-item">
       <h3>Cocktail Hour</h3>
-      <p>6:00 pm · Terrace Gardens</p>
+      <p>6:30 pm · Terrace Patio</p>
     </div>
     <div class="details-item">
       <h3>Reception</h3>
-      <p>7:00 pm · Grand Ballroom</p>
+      <p>7:30 pm · Country Club</p>
     </div>
   </section>
 
